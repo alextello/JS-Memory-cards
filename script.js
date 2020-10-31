@@ -131,3 +131,10 @@ addCardBtn.addEventListener('click', () => {
         setCardsData(cardsData);
     }
 });
+
+// limpiar tarjetas
+clearBtn.addEventListener('click', () => {
+    localStorage.clear();
+    cardsContainer.innerHTML = '';
+    window.location.reload();
+});
